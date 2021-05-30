@@ -19,7 +19,6 @@ const getArtistsAll = (orderField = 'name', db = connection) => {
 const addArtist = (artist, db = connection) => {
   return db('artists')
     .insert(artist)
-    .returning('sid')
 }
 
 
