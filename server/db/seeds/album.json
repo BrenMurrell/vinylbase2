@@ -1,0 +1,213 @@
+{
+  "album_type": "album",
+  "artists": [{
+    "external_urls": {
+      "spotify": "https://open.spotify.com/artist/0k17h0D3J5VfsdmQ1iZtE9"
+    },
+    "href": "https://api.spotify.com/v1/artists/0k17h0D3J5VfsdmQ1iZtE9",
+    "id": "0k17h0D3J5VfsdmQ1iZtE9",
+    "name": "Pink Floyd",
+    "type": "artist",
+    "uri": "spotify:artist:0k17h0D3J5VfsdmQ1iZtE9"
+  }],
+  "available_markets": ["AE", "AG", "AO", "AR", "AU", "BB", "BD", "BF", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BZ", "CA", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "DJ", "DM", "DO", "EC", "EG", "FJ", "FM", "GA", "GD", "GH", "GM", "GN", "GQ", "GT", "GW", "GY", "HK", "HN", "HT", "ID", "IL", "IN", "JM", "JO", "JP", "KE", "KH", "KI", "KM", "KN", "KR", "KW", "LA", "LB", "LC", "LK", "LR", "LS", "MG", "MH", "ML", "MO", "MR", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PS", "PW", "PY", "QA", "RW", "SA", "SB", "SC", "SG", "SL", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TL", "TN", "TO", "TT", "TV", "TW", "TZ", "UG", "US", "UY", "VC", "VN", "VU", "WS", "ZA", "ZM", "ZW"],
+  "copyrights": [{
+    "text": "(P) 2016 The copyright in this sound recording is owned by Pink Floyd Music Ltd., marketed and distributed by Sony Music Entertainment",
+    "type": "P"
+  }],
+  "external_ids": {
+    "upc": "886445613247"
+  },
+  "external_urls": {
+    "spotify": "https://open.spotify.com/album/468ZwCchVtzEbt9BHmXopb"
+  },
+  "genres": [],
+  "href": "https://api.spotify.com/v1/albums/468ZwCchVtzEbt9BHmXopb",
+  "id": "468ZwCchVtzEbt9BHmXopb",
+  "images": [{
+    "height": 640,
+    "url": "https://i.scdn.co/image/ab67616d0000b27356a920ebe6d25348c978e0ae",
+    "width": 640
+  }, {
+    "height": 300,
+    "url": "https://i.scdn.co/image/ab67616d00001e0256a920ebe6d25348c978e0ae",
+    "width": 300
+  }, {
+    "height": 64,
+    "url": "https://i.scdn.co/image/ab67616d0000485156a920ebe6d25348c978e0ae",
+    "width": 64
+  }],
+  "label": "Pink Floyd Records",
+  "name": "Meddle",
+  "popularity": 61,
+  "release_date": "1971-11-11",
+  "release_date_precision": "day",
+  "total_tracks": 6,
+  "tracks": {
+    "href": "https://api.spotify.com/v1/albums/468ZwCchVtzEbt9BHmXopb/tracks?offset=0&limit=50",
+    "items": [{
+      "artists": [{
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/0k17h0D3J5VfsdmQ1iZtE9"
+        },
+        "href": "https://api.spotify.com/v1/artists/0k17h0D3J5VfsdmQ1iZtE9",
+        "id": "0k17h0D3J5VfsdmQ1iZtE9",
+        "name": "Pink Floyd",
+        "type": "artist",
+        "uri": "spotify:artist:0k17h0D3J5VfsdmQ1iZtE9"
+      }],
+      "available_markets": ["AE", "AG", "AO", "AR", "AU", "BB", "BD", "BF", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BZ", "CA", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "DJ", "DM", "DO", "EC", "EG", "FJ", "FM", "GA", "GD", "GH", "GM", "GN", "GQ", "GT", "GW", "GY", "HK", "HN", "HT", "ID", "IL", "IN", "JM", "JO", "JP", "KE", "KH", "KI", "KM", "KN", "KR", "KW", "LA", "LB", "LC", "LK", "LR", "LS", "MG", "MH", "ML", "MO", "MR", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PS", "PW", "PY", "QA", "RW", "SA", "SB", "SC", "SG", "SL", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TL", "TN", "TO", "TT", "TV", "TW", "TZ", "UG", "US", "UY", "VC", "VN", "VU", "WS", "ZA", "ZM", "ZW"],
+      "disc_number": 1,
+      "duration_ms": 354613,
+      "explicit": false,
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/6uU0Hu8oVk9gBihokcrDMH"
+      },
+      "href": "https://api.spotify.com/v1/tracks/6uU0Hu8oVk9gBihokcrDMH",
+      "id": "6uU0Hu8oVk9gBihokcrDMH",
+      "is_local": false,
+      "name": "One of These Days",
+      "preview_url": "https://p.scdn.co/mp3-preview/ad9b0e65c44c5a917cce3174e0d8e8a5058f71d5?cid=ae35d978df124bc0a7f38408ef73f496",
+      "track_number": 1,
+      "type": "track",
+      "uri": "spotify:track:6uU0Hu8oVk9gBihokcrDMH"
+    }, {
+      "artists": [{
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/0k17h0D3J5VfsdmQ1iZtE9"
+        },
+        "href": "https://api.spotify.com/v1/artists/0k17h0D3J5VfsdmQ1iZtE9",
+        "id": "0k17h0D3J5VfsdmQ1iZtE9",
+        "name": "Pink Floyd",
+        "type": "artist",
+        "uri": "spotify:artist:0k17h0D3J5VfsdmQ1iZtE9"
+      }],
+      "available_markets": ["AE", "AG", "AO", "AR", "AU", "BB", "BD", "BF", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BZ", "CA", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "DJ", "DM", "DO", "EC", "EG", "FJ", "FM", "GA", "GD", "GH", "GM", "GN", "GQ", "GT", "GW", "GY", "HK", "HN", "HT", "ID", "IL", "IN", "JM", "JO", "JP", "KE", "KH", "KI", "KM", "KN", "KR", "KW", "LA", "LB", "LC", "LK", "LR", "LS", "MG", "MH", "ML", "MO", "MR", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PS", "PW", "PY", "QA", "RW", "SA", "SB", "SC", "SG", "SL", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TL", "TN", "TO", "TT", "TV", "TW", "TZ", "UG", "US", "UY", "VC", "VN", "VU", "WS", "ZA", "ZM", "ZW"],
+      "disc_number": 1,
+      "duration_ms": 312893,
+      "explicit": false,
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/7krbQbYq63hcwVMNW1R0tD"
+      },
+      "href": "https://api.spotify.com/v1/tracks/7krbQbYq63hcwVMNW1R0tD",
+      "id": "7krbQbYq63hcwVMNW1R0tD",
+      "is_local": false,
+      "name": "A Pillow of Winds",
+      "preview_url": "https://p.scdn.co/mp3-preview/5b3b44f23a665aae5330143b701a0e9076a0a173?cid=ae35d978df124bc0a7f38408ef73f496",
+      "track_number": 2,
+      "type": "track",
+      "uri": "spotify:track:7krbQbYq63hcwVMNW1R0tD"
+    }, {
+      "artists": [{
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/0k17h0D3J5VfsdmQ1iZtE9"
+        },
+        "href": "https://api.spotify.com/v1/artists/0k17h0D3J5VfsdmQ1iZtE9",
+        "id": "0k17h0D3J5VfsdmQ1iZtE9",
+        "name": "Pink Floyd",
+        "type": "artist",
+        "uri": "spotify:artist:0k17h0D3J5VfsdmQ1iZtE9"
+      }],
+      "available_markets": ["AE", "AG", "AO", "AR", "AU", "BB", "BD", "BF", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BZ", "CA", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "DJ", "DM", "DO", "EC", "EG", "FJ", "FM", "GA", "GD", "GH", "GM", "GN", "GQ", "GT", "GW", "GY", "HK", "HN", "HT", "ID", "IL", "IN", "JM", "JO", "JP", "KE", "KH", "KI", "KM", "KN", "KR", "KW", "LA", "LB", "LC", "LK", "LR", "LS", "MG", "MH", "ML", "MO", "MR", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PS", "PW", "PY", "QA", "RW", "SA", "SB", "SC", "SG", "SL", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TL", "TN", "TO", "TT", "TV", "TW", "TZ", "UG", "US", "UY", "VC", "VN", "VU", "WS", "ZA", "ZM", "ZW"],
+      "disc_number": 1,
+      "duration_ms": 367933,
+      "explicit": false,
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/7AalBKBoLDR4UmRYRJpdbj"
+      },
+      "href": "https://api.spotify.com/v1/tracks/7AalBKBoLDR4UmRYRJpdbj",
+      "id": "7AalBKBoLDR4UmRYRJpdbj",
+      "is_local": false,
+      "name": "Fearless",
+      "preview_url": "https://p.scdn.co/mp3-preview/29ba2c3048f6d541e9021dda1182d7c66dd89567?cid=ae35d978df124bc0a7f38408ef73f496",
+      "track_number": 3,
+      "type": "track",
+      "uri": "spotify:track:7AalBKBoLDR4UmRYRJpdbj"
+    }, {
+      "artists": [{
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/0k17h0D3J5VfsdmQ1iZtE9"
+        },
+        "href": "https://api.spotify.com/v1/artists/0k17h0D3J5VfsdmQ1iZtE9",
+        "id": "0k17h0D3J5VfsdmQ1iZtE9",
+        "name": "Pink Floyd",
+        "type": "artist",
+        "uri": "spotify:artist:0k17h0D3J5VfsdmQ1iZtE9"
+      }],
+      "available_markets": ["AE", "AG", "AO", "AR", "AU", "BB", "BD", "BF", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BZ", "CA", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "DJ", "DM", "DO", "EC", "EG", "FJ", "FM", "GA", "GD", "GH", "GM", "GN", "GQ", "GT", "GW", "GY", "HK", "HN", "HT", "ID", "IL", "IN", "JM", "JO", "JP", "KE", "KH", "KI", "KM", "KN", "KR", "KW", "LA", "LB", "LC", "LK", "LR", "LS", "MG", "MH", "ML", "MO", "MR", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PS", "PW", "PY", "QA", "RW", "SA", "SB", "SC", "SG", "SL", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TL", "TN", "TO", "TT", "TV", "TW", "TZ", "UG", "US", "UY", "VC", "VN", "VU", "WS", "ZA", "ZM", "ZW"],
+      "disc_number": 1,
+      "duration_ms": 223066,
+      "explicit": false,
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/3kbUFmLV5SHVQonfOpNgkd"
+      },
+      "href": "https://api.spotify.com/v1/tracks/3kbUFmLV5SHVQonfOpNgkd",
+      "id": "3kbUFmLV5SHVQonfOpNgkd",
+      "is_local": false,
+      "name": "San Tropez",
+      "preview_url": "https://p.scdn.co/mp3-preview/0ba1e317c4f3ea32d4903b1e08c43f57f579a106?cid=ae35d978df124bc0a7f38408ef73f496",
+      "track_number": 4,
+      "type": "track",
+      "uri": "spotify:track:3kbUFmLV5SHVQonfOpNgkd"
+    }, {
+      "artists": [{
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/0k17h0D3J5VfsdmQ1iZtE9"
+        },
+        "href": "https://api.spotify.com/v1/artists/0k17h0D3J5VfsdmQ1iZtE9",
+        "id": "0k17h0D3J5VfsdmQ1iZtE9",
+        "name": "Pink Floyd",
+        "type": "artist",
+        "uri": "spotify:artist:0k17h0D3J5VfsdmQ1iZtE9"
+      }],
+      "available_markets": ["AE", "AG", "AO", "AR", "AU", "BB", "BD", "BF", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BZ", "CA", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "DJ", "DM", "DO", "EC", "EG", "FJ", "FM", "GA", "GD", "GH", "GM", "GN", "GQ", "GT", "GW", "GY", "HK", "HN", "HT", "ID", "IL", "IN", "JM", "JO", "JP", "KE", "KH", "KI", "KM", "KN", "KR", "KW", "LA", "LB", "LC", "LK", "LR", "LS", "MG", "MH", "ML", "MO", "MR", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PS", "PW", "PY", "QA", "RW", "SA", "SB", "SC", "SG", "SL", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TL", "TN", "TO", "TT", "TV", "TW", "TZ", "UG", "US", "UY", "VC", "VN", "VU", "WS", "ZA", "ZM", "ZW"],
+      "disc_number": 1,
+      "duration_ms": 134840,
+      "explicit": false,
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/05lNdqc6FhcsxCfS8lJzyE"
+      },
+      "href": "https://api.spotify.com/v1/tracks/05lNdqc6FhcsxCfS8lJzyE",
+      "id": "05lNdqc6FhcsxCfS8lJzyE",
+      "is_local": false,
+      "name": "Seamus",
+      "preview_url": "https://p.scdn.co/mp3-preview/1b91e30f504efedab2a38319512c5d347a440002?cid=ae35d978df124bc0a7f38408ef73f496",
+      "track_number": 5,
+      "type": "track",
+      "uri": "spotify:track:05lNdqc6FhcsxCfS8lJzyE"
+    }, {
+      "artists": [{
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/0k17h0D3J5VfsdmQ1iZtE9"
+        },
+        "href": "https://api.spotify.com/v1/artists/0k17h0D3J5VfsdmQ1iZtE9",
+        "id": "0k17h0D3J5VfsdmQ1iZtE9",
+        "name": "Pink Floyd",
+        "type": "artist",
+        "uri": "spotify:artist:0k17h0D3J5VfsdmQ1iZtE9"
+      }],
+      "available_markets": ["AE", "AG", "AO", "AR", "AU", "BB", "BD", "BF", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BZ", "CA", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "DJ", "DM", "DO", "EC", "EG", "FJ", "FM", "GA", "GD", "GH", "GM", "GN", "GQ", "GT", "GW", "GY", "HK", "HN", "HT", "ID", "IL", "IN", "JM", "JO", "JP", "KE", "KH", "KI", "KM", "KN", "KR", "KW", "LA", "LB", "LC", "LK", "LR", "LS", "MG", "MH", "ML", "MO", "MR", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PS", "PW", "PY", "QA", "RW", "SA", "SB", "SC", "SG", "SL", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TL", "TN", "TO", "TT", "TV", "TW", "TZ", "UG", "US", "UY", "VC", "VN", "VU", "WS", "ZA", "ZM", "ZW"],
+      "disc_number": 1,
+      "duration_ms": 1412451,
+      "explicit": false,
+      "external_urls": {
+        "spotify": "https://open.spotify.com/track/7kriFJLY2KOhw5en9iI2jb"
+      },
+      "href": "https://api.spotify.com/v1/tracks/7kriFJLY2KOhw5en9iI2jb",
+      "id": "7kriFJLY2KOhw5en9iI2jb",
+      "is_local": false,
+      "name": "Echoes",
+      "preview_url": "https://p.scdn.co/mp3-preview/c9c0aa842450c03be8536fc687796cc1f00ea59b?cid=ae35d978df124bc0a7f38408ef73f496",
+      "track_number": 6,
+      "type": "track",
+      "uri": "spotify:track:7kriFJLY2KOhw5en9iI2jb"
+    }],
+    "limit": 50,
+    "next": null,
+    "offset": 0,
+    "previous": null,
+    "total": 6
+  },
+  "type": "album",
+  "uri": "spotify:album:468ZwCchVtzEbt9BHmXopb"
+}
