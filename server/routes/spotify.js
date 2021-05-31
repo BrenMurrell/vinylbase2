@@ -10,14 +10,6 @@ router.get('/auth', (req, res) => {
   // res.send(redirectUrl)
   const authUrl = `${baseUrl}authorize/?client_id=${process.env.spotify_id}&response_type=code&redirect_uri=${redirectUrl}&scope=user-read-private%20user-read-email&state=34fFs29kd09&show_dialog=true`
   res.redirect(authUrl)
-  // return request(authUrl)
-  //   .get()
-  //   .then(response => {
-  //     console.log(response)
-  //   })
-  //   .catch(err => {
-  //     console.log('ooops', err.message)
-  //   })
 })
 
 router.get('/response', (req, res) => {
