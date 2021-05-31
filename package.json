@@ -5,7 +5,7 @@
   "scripts": {
     "test": "jest --watch-all --verbose",
     "knex": "knex --knexfile ./server/db/knexfile.js",
-    "server": "nodemon server/index"
+    "dev": "nodemon server/index"
   },
   "keywords": [],
   "author": "",
