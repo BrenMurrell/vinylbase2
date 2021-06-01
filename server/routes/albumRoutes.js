@@ -22,6 +22,7 @@ router.post('/', (req, res) => {
     })
     .catch(err => {
       console.log('Error: ', err.message)
+      
       res.status(500).json('Error! - Album could not be created')
     })
 })
