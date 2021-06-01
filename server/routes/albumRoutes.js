@@ -10,14 +10,13 @@ router.get('/', (req, res) => {
     })
 })
 
-//TODO: complete patch route (write tests)
 router.post('/', (req, res) => {
   const newAlbum = req.body
   return db.addAlbum(newAlbum)
     .then(() => {
       return db.getAlbumBySid(req.body.sid)
         .then(album => {
-          res.status(201).json(album)
+          res.status(200).json(album)
         })
     })
     .catch(err => {
@@ -34,7 +33,6 @@ router.get('/:sid', (req, res) => {
     })
 })
 
-//TODO: complete patch route (write tests)
 router.patch('/:sid', (req, res) => {
   const sid = req.params.sid
   return db.updateAlbum(sid, req.body)

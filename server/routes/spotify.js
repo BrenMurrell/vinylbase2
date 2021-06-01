@@ -38,11 +38,8 @@ router.get('/response', (req, res) => {
     .type('form')
     .end((err, response) => {
       // console.log('err?', err)
-      console.log(response.body)
+      // console.log(response.body)
 
-      // res.cookie('vb_access_token', response.body.access_token, { maxAge: 3600, httpOnly: true });
-      // localStorage.setItem('vb_access_token', response.body.access_token)
-      // localStorage.setItem('vb_refresh_token', response.body.refresh_token)
       res.cookie('vb_access_token', response.body.acces_token).send('cookie set')
       res.cookie('vb_refresh_token', response.body.acces_token).send('cookie set')
 

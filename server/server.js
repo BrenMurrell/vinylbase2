@@ -17,12 +17,14 @@ server.use(express.urlencoded({ extended: true }))
 
 const spotifyRoutes = require('./routes/spotify')
 const albumRoutes = require('./routes/albumRoutes')
+const artistRoutes = require('./routes/artistRoutes')
 
+// ROUTES
 
 server.use('/spotify', spotifyRoutes)
-server.use('/api/v1/albums', albumRoutes
-)
-// ROUTES
+server.use('/api/v1/albums', albumRoutes)
+server.use('/api/v1/artists', artistRoutes)
+
 server.get('/', (req,res) => {
   res.send('Home route')
 })
