@@ -1,6 +1,8 @@
 const express = require('express')
 const router = express.Router()
 
+const userDb = require('../db/userFuncs')
+
 const request = require('superagent')
 
 
@@ -38,15 +40,42 @@ router.get('/response', (req, res) => {
     .type('form')
     .end((err, response) => {
       // console.log('err?', err)
-      // console.log(response.body)
+      console.log(response.body)
 
-      res.cookie('vb_access_token', response.body.acces_token).send('cookie set')
-      res.cookie('vb_refresh_token', response.body.acces_token).send('cookie set')
+      res.cookie('vb_access_token', response.body.access_token).cookie('vb_refresh_token', response.body.refresh_token).send('cookie set')
 
-      res.send(response.body)
     })
-
 })
+
+router.get('/me', (req, res) => {
+  console.log('Cookies: ', req.cookies.vb_access_token)
+
+  request.get('https://api.spotify.com/v1/me')
+    .set('Authorization', `Bearer ${req.cookies.vb_access_token}`)
+    .end((err, user) => {
+      const spotifyUser = JSON.parse(user.text)
+      const newUser = {
+        id: spotifyUser.id,
+        display_name: spotifyUser.display_name,
+        photo_url: spotifyUser.images[0].url,
+        spotify_url: spotifyUser.external_urls.spotify,
+        spotify_api_url: spotifyUser.href,
+        email: spotifyUser.email
+      }
+
+      return userDb.addUser(newUser)
+        .then(() => {
+          return userDb.getUserByUid(newUser.id)
+            .then(createdUser => {
+              res.json(createdUser)
+            })
+        })
+      // res.json(JSON.parse(user.text))
+
+    })
+})
+
+
 
 module.exports = router
 

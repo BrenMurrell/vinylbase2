@@ -1,0 +1,28 @@
+{
+  "country": "NZ",
+  "display_name": "Bren Murrell",
+  "email": "test@spotify.com",
+  "explicit_content": {
+    "filter_enabled": false,
+    "filter_locked": false
+  },
+  "external_urls": {
+    "spotify": "https://open.spotify.com/user/brenmurrell"
+  },
+  "followers": {
+    "href": null,
+    "total": 31
+  },
+  "href": "https://api.spotify.com/v1/users/brenmurrell",
+  "id": "brentest",
+  "images": [
+    {
+      "height": null,
+      "url": "https://placehold.it/300/300",
+      "width": null
+    }
+  ],
+  "product": "premium",
+  "type": "user",
+  "uri": "spotify:user:brenmurrell"
+}

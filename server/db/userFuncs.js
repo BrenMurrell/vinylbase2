@@ -6,7 +6,7 @@ const connection = knex(config[env])
 
 const getUserByUid = (uid, db = connection) => {
   return db('users')
-    .where('uid', uid)
+    .where('id', uid)
     .first()
 }
 
@@ -24,13 +24,13 @@ const addUser = (user, db = connection) => {
 const updateUser = (uid, data, db = connection) => {
   return db('users')
     .update(data)
-    .where('uid', uid)
+    .where('id', uid)
 }
 
 const deleteUser = (uid, db = connection) => {
   return db('users')
     .delete()
-    .where('uid', uid)
+    .where('id', uid)
 }
 
 module.exports = {
