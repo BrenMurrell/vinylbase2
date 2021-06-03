@@ -21,11 +21,12 @@ router.get('/search', (req, res) => {
 })
 
 router.get('/me', (req, res) => {
+  console.log('token')
   request.get('https://api.spotify.com/v1/me')
     .set('Authorization', `Bearer ${req.query.access_token}`)
     .end((err, user) => {
       if (err) {
-        console.log(err.message, user.error.text)
+        console.log('/me errors: ', err.message, user.error.text)
         return res.status(500).json({ error: 'Something went wrong' })
       }
       const spotifyUser = JSON.parse(user.text)
@@ -60,6 +61,7 @@ router.get('/appToken', (req, res) => {
 })
 
 router.get('/userTokens', (req, res) => {
+  console.log('/userTokens got code', req.query.code)
   const authCode = req.query.code
   request.post('https://accounts.spotify.com/api/token')
     .send({
@@ -71,8 +73,10 @@ router.get('/userTokens', (req, res) => {
     .type('form')
     .end((err, data) => {
       if (err) {
+        console.log('/userTokens error', err)
         return res.json(err)
       }
+      console.log('/userTokens data', err)
       return res.json(data)
     })
 })

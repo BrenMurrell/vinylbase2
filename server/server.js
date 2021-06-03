@@ -2,7 +2,7 @@ const path = require('path')
 const express = require('express')
 const server = express()
 // const session = require('express-session')
-const cookieParser = require('cookie-parser');
+const cookieParser = require('cookie-parser')
 // MIDDLEWARE
 server.use(cookieParser())
 server.use(express.json())
