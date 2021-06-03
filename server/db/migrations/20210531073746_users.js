@@ -2,7 +2,7 @@ exports.up = (knex) => {
   return knex.schema.createTable('users', (t) => {
     t.string('id').primary()
     t.string('display_name')
-    t.string('photo_url')
+    t.text('photo_url')
     t.string('spotify_url')
     t.string('spotify_api_url')
     t.string('email')
