@@ -65,7 +65,7 @@ router.get('/userTokens', (req, res) => {
     .send({
       grant_type: 'authorization_code',
       code: authCode,
-      redirect_uri: 'http://localhost:3000/callback'
+      redirect_uri: `http://${process.env.HOST}:${process.env.PORT}/callback`
     })
     .set('Authorization', `Basic ${process.env.spotify_base64}`)
     .type('form')
