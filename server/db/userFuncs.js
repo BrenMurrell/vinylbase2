@@ -20,7 +20,6 @@ const addUser = (user, db = connection) => {
     .insert(user)
 }
 
-
 const updateUser = (uid, data, db = connection) => {
   return db('users')
     .update(data)

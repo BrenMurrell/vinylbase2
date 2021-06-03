@@ -21,7 +21,6 @@ const addAlbum = (album, db = connection) => {
     .insert(album)
 }
 
-
 const updateAlbum = (sid, data, db = connection) => {
   return db('albums')
     .update(data)

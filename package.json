@@ -3,9 +3,35 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watch-all --verbose",
-    "knex": "knex --knexfile ./server/db/knexfile.js",
-    "dev": "nodemon server/index"
+    "start": "node server",
+    "test": "jest",
+    "test:coverage": "jest --noStackTrace --coverage && jest-coverage-badges",
+    "test:watch": "jest --noStackTrace --watchAll --verbose",
+    "dev": "run-p dev:client dev:server",
+    "dev:client": "npm run webpack -- --watch",
+    "dev:server": "nodemon --watch server server/index.js",
+    "build": "run-p build:client build:server",
+    "build:client": "npm run webpack -- --mode production",
+    "build:server": "npm run knex -- migrate:latest",
+    "lint": "eslint --ext .js,.jsx .",
+    "webpack": "webpack --config ./client/webpack.config.js",
+    "knex": "knex --knexfile ./server/db/knexfile.js"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties",
+      "@babel/plugin-proposal-object-rest-spread"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "eda",
+    "ignorePatterns": [
+      "bundle.js"
+    ]
   },
   "keywords": [],
   "author": "",
@@ -16,6 +42,7 @@
     "express": "^4.17.1",
     "knex": "^0.21.12",
     "pg": "^8.5.1",
+    "remote-redux-devtools": "^0.5.16",
     "superagent": "^6.1.0"
   },
   "devDependencies": {

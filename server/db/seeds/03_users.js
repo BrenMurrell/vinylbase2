@@ -5,15 +5,14 @@ exports.seed = (knex) => {
     .then(function () {
       // Inserts seed entries
       return knex('users').insert([
-        {uid: '1', displayName: 'brenmurrell', photoURL: '', userName: 'Brenegade'},
-        {uid: '2', displayName: 'timmy-tester', photoURL: '', userName: 'TimmyTester'},
-        {uid: '3', displayName: 'davidg', photoURL: '', userName: 'Dave Gilmour'}
-      ]);
-    });
-};
+        { id: '1', display_name: 'brentest', photo_url: '' },
+        { id: '2', display_name: 'timmy-tester', photo_url: '' },
+        { id: '3', display_name: 'davidg', photo_url: '' }
+      ])
+    })
+}
 
-/* 
-
+/*
 t.string('uid').primary()
 t.string('displayName')
 t.string('photoURL')

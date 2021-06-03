@@ -1,21 +1,35 @@
+/* eslint-disable promise/no-nesting */
 const express = require('express')
 const router = express.Router()
 
-const db = require('../db/userFuncs')
+const dbUsers = require('../db/userFuncs')
+const dbUserAlbums = require('../db/userAlbumFuncs')
+const dbAlbums = require('../db/albumFuncs')
 
-  // t.string('id').primary()
-  // t.string('display_name')
-  // t.string('photo_url')
-  // t.string('spotify_url')
-  // t.string('spotify_api_url')
-  // t.string('email')
+router.get('/', (req, res) => {
+  return dbUsers.getUsersAll()
+    .then(users => {
+      return res.json(users)
+    })
+    .catch(e => {
+      console.log(e.message)
+      res.status(500).send('something went wrong :(')
+    })
+})
+
+router.get('/:id/albums', (req, res) => {
+  return dbUserAlbums.getUserAlbumsByUid(req.params.id)
+    .then(albums => {
+      return res.json(albums)
+    })
+})
 
 router.post('/', (req, res) => {
-  const spotifyUser = req.body 
-  return db.getUserByUid(spotifyUser.id)
+  const spotifyUser = req.body
+  return dbUsers.getUserByUid(spotifyUser.id)
     .then(user => {
       if (user) {
-        res.json({ 'err': 'User already exists' })
+        return res.json({ err: 'User already exists' })
       } else {
         const newUser = {
           id: spotifyUser.id,
@@ -25,15 +39,58 @@ router.post('/', (req, res) => {
           spotify_api_url: spotifyUser.href,
           email: spotifyUser.email
         }
-        return db.addUser(newUser)
+        return dbUsers.addUser(newUser)
           .then(() => {
-            return db.getUserByUid(newUser.id)
+            return dbUsers.getUserByUid(newUser.id)
               .then(user => {
-                res.json(user)
+                return res.json(user)
               })
           })
       }
+    })
+    .error(err => {
+      console.log(err.message)
+    })
+})
 
+router.post('/add-album', (req, res) => {
+  const newAlbum = req.body.album
+  const userId = req.body.userId
+  // return res.json({ newAlbum, userId })
+  return dbAlbums.getAlbumBySid(newAlbum.id)
+  // return dbAlbums.getAlbumBySid('468ZwCchVtzEbt9BHmXopb')
+    .then(album => {
+      const newAlbumObj = {
+        sid: newAlbum.id,
+        artistID: newAlbum.artists[0].id,
+        albumArt: newAlbum.images[0].url,
+        name: newAlbum.name
+      }
+
+      const userAlbumData = {
+        uid: userId,
+        sid: newAlbumObj.sid
+      }
+
+      if (!album) {
+        // return res.json({ album: null })
+        return dbAlbums.addAlbum(newAlbumObj)
+          .then(() => {
+            return dbUserAlbums.addUserAlbum(userAlbumData)
+              .then(() => {
+                newAlbumObj.uid = userId
+                return res.json(newAlbumObj)
+              })
+          })
+      } else {
+        return dbUserAlbums.addUserAlbum(userAlbumData)
+          .then(() => {
+            newAlbumObj.uid = userId
+            return res.json(newAlbumObj)
+          })
+      }
+
+      // return res.json(album)
     })
 })
 
